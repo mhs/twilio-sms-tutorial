@@ -8,3 +8,4 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+//= require jquery.maskedinput-1.3.min.js
