@@ -1,3 +1,25 @@
+<% if ENV['TWILIO_SID'].nil? %>
+<div class="alert-message error">
+  <a class="close" href="#">×</a>
+  <p><strong>Configuration Error!</strong> The "sid" value is not defined for <strong><%= Rails.env %></strong> in your twilio.yml file.</p>
+</div>
+<% end %>
+
+<% if ENV['TWILIO_TOKEN'].nil? %>
+<div class="alert-message error">
+  <a class="close" href="#">×</a>
+  <p><strong>Configuration Error!</strong> The "account" value is not defined for <strong><%= Rails.env %></strong> in your twilio.yml file.</p>
+</div>
+<% end %>
+
+<% if ENV['TWILIO_NUMBER'].nil? %>
+<div class="alert-message error">
+  <a class="close" href="#">×</a>
+  <p><strong>Configuration Error!</strong> The "phone_number" value is not defined for <strong><%= Rails.env %></strong> in your twilio.yml file.</p>
+</div>
+<% end %>
+
+
 <h1>Get the latest tweet from Twitter on your mobile phone!</h1>
 
 <p>

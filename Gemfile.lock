@@ -52,6 +52,8 @@ GEM
       railties (~> 3.0)
       thor (~> 0.14)
     json (1.6.5)
+    jwt (0.1.4)
+      json (>= 1.2.4)
     less (2.0.8)
       commonjs (~> 0.2.0)
       therubyracer (~> 0.9.9)
@@ -113,6 +115,10 @@ GEM
       polyglot (>= 0.3.1)
     turn (0.8.3)
       ansi
+    twilio-ruby (3.5.0)
+      builder (>= 2.1.2)
+      jwt (>= 0.1.2)
+      multi_json (>= 1.0.3)
     twitter-bootstrap-rails (1.4.3)
       actionpack
       jquery-rails (>= 1.0)
@@ -133,5 +139,6 @@ DEPENDENCIES
   sass-rails (~> 3.1.0)
   sqlite3
   turn
+  twilio-ruby
   twitter-bootstrap-rails
   uglifier
